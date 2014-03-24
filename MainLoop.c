@@ -94,6 +94,8 @@ static int ProcessConfigFile(const char* configFileName)
 	windowHeight = json_object_get_number(object, "windowHeight"); 
 	windowPosX = json_object_get_number(object, "windowPosX"); 
 	windowPosY = json_object_get_number(object, "windowPosY"); 
+    FFMainLoopContext.windowWidth = windowWidth;
+    FFMainLoopContext.windowHeight = windowHeight;
 
 	json_value_free(root);
 

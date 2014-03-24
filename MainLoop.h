@@ -26,6 +26,13 @@ extern "C"
 
 #include "Keycodes.h"
 
+struct
+{
+    float windowWidth;
+    float windowHeight;
+}
+FFMainLoopContext;
+
 /*
 ** Creates a main loop. Creates a window and an OpenGL context (currently 3.2)
 ** also initializes GLEW.
